@@ -9,7 +9,7 @@ export default function Login() {
   const [first, setfirst] = useState("");
   const [out, setOut] = useState("");
   const createQr = (value:string) =>{
-    let host = 'https://'+window.location.host+'/about/'+value;
+    let host = 'https://'+window.location.host+'/login/'+value;
     QRCode.toDataURL(host)
   .then((url:any) => {
     console.log(url);
